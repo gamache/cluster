@@ -17,11 +17,10 @@ export HYDRO_HOME=~/hydro-project
 
 mkdir $HYDRO_HOME
 cd $HYDRO_HOME
-git clone https://github.com/hydro-project/common.git
-git clone https://github.com/hydro-project/cluster.git
-git clone https://github.com/hydro-project/anna.git
-git clone https://github.com/hydro-project/anna-cache.git
-git clone https://github.com/hydro-project/droplet.git
+git clone --recurse-submodules https://github.com/hydro-project/anna.git
+git clone --recurse-submodules https://github.com/hydro-project/anna-cache.git
+git clone --recurse-submodules https://github.com/hydro-project/cluster.git
+git clone --recurse-submodules https://github.com/hydro-project/droplet.git
 
 cd cluster
 ```
